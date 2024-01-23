@@ -3,14 +3,18 @@ const text = document.getElementById('mytext')
 // button criptografar
 const button_criptografar = document.getElementById('criptografar')
 const button_descriptografar = document.getElementById('descriptografar')
+const button_copiar = document.getElementById('copy')
 
+// Evento para criptografar a palavra
 button_criptografar.addEventListener('click',(e) => {
+    // Cancelando o envio do formulario
     e.preventDefault()
 
     // chamando função
     criptografando()
 })
 
+// Evento para decodificador a criptografia
 button_descriptografar.addEventListener('click',(e) => {
     // Cancelando o envio do formulario
     e.preventDefault()
@@ -18,6 +22,12 @@ button_descriptografar.addEventListener('click',(e) => {
     // Chamando função
     decodificando()
 })
+
+// Evento de copiar o texto para area de transferencia
+button_copiar.addEventListener('click',() => {
+   navigator.clipboard.writeText(document.querySelector('p').textContent)
+})
+
 // Função que criptografa a palavra
 function criptografando(){
 
@@ -62,5 +72,8 @@ function decodificando(){
 
         // Mostrando o resultado na tag p
         document.querySelector('p').textContent = decodificando
+
+        // Limpando input
+        text.value = ''
     }
 }

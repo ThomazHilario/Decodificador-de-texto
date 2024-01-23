@@ -35,6 +35,11 @@ article{
     background-color: rgba(160, 178, 220, 0.468);
 
     border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* formulario */
@@ -87,4 +92,18 @@ textarea{
 
 #container_buttons > button:nth-child(2){
     background-color: rgba(216, 223, 232, 1);
+}
+
+/* button - copy */
+#copy{
+    background-color: rgba(216, 223, 232, 1);;
+
+    width: 180px;
+    height: 40px;
+
+    border-radius: 20px;
+    border: 0px;
+
+    cursor: pointer;  
+    font-size: 20px;
 }
