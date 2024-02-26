@@ -1,4 +1,4 @@
-<img src="images/Decodificador de codigo.png"/>
+<img src="images/Decodificador de codigo.jpeg"/>
 
 # Decodificador-de-texto
  Challenge One - Construindo um decodificador de texto com javascript
