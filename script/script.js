@@ -25,8 +25,18 @@ button_descriptografar.addEventListener('click',(e) => {
 
 // Evento de copiar o texto para area de transferencia
 button_copiar.addEventListener('click',() => {
-   navigator.clipboard.writeText(document.querySelector('p').textContent)
+
+    // Chamando o copyText
+    copyText()
+
+    // Alerta de texto copiado
+    alert('Texto copiado')
 })
+
+// Copiando o texto para area de transferencia
+function copyText(){
+    navigator.clipboard.writeText(document.querySelector('#textResult').textContent)
+}
 
 // Função que criptografa a palavra
 function criptografando(){
