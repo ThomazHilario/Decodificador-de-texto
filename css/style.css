@@ -121,7 +121,7 @@ textarea{
 }
 
 #container_buttons > button:nth-child(2){
-    background-color: #414e6e;
+    background-color: rgb(216, 223, 232);
 }
 
 /* button - copy e textResult*/
