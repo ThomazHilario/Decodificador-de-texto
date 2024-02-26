@@ -44,8 +44,31 @@ article{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+/* divNotFound */
+#divNotFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    text-align: center;
+}
+
+#divNotFound > img{
+    width: 180px;
+}
+
+#divNotFound > h2{
+    line-height: 23px;
+}
+
+#divNotFound > p{
+    width: 100%;
 }
 
 /* formulario */
@@ -101,8 +124,14 @@ textarea{
     background-color: #414e6e;
 }
 
-/* button - copy */
+/* button - copy e textResult*/
+#textResult{
+    display: none;
+}
+
+
 #copy{
+    display:none;
     background-color: #414e6e;
     color: white;
 
