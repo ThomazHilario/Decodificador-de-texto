@@ -47,7 +47,7 @@ function criptografando(){
 
         // Inserindo o resultado na tag p
         document.querySelector('p').textContent = criptografado
-
+        
         // Limpando textarea
         text.value = ''
     }

@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    background-color: rgba(243, 245, 252, 1);
+    background-color: #262c40;
     height: 100vh;
 
     display: flex;
@@ -38,6 +38,7 @@ article{
 
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(160, 178, 220, 0.468);
+    color: white;
 
     border-radius: 20px;
 
@@ -62,6 +63,7 @@ article{
 
 /* textarea */
 textarea{
+    color: white;
     border: 0px;
     padding: 10px;
     height: 400px;
@@ -90,18 +92,19 @@ textarea{
 }
 
 #container_buttons > button:nth-child(1){
-    background-color: rgba(10, 56, 113, 1);
+    background-color: #414e6e;
     color: white;
   
 }
 
 #container_buttons > button:nth-child(2){
-    background-color: rgba(216, 223, 232, 1);
+    background-color: #414e6e;
 }
 
 /* button - copy */
 #copy{
-    background-color: rgba(216, 223, 232, 1);;
+    background-color: #414e6e;
+    color: white;
 
     width: 180px;
     height: 40px;
