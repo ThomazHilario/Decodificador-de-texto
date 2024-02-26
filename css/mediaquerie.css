@@ -2,6 +2,12 @@
     #container{
         flex-direction: column;
     }
+    #barra_lateral{
+        width: 80%;
+    }
+    #divNotFound > img{
+        display: none;;
+    }
 }
 
 @media screen and (max-width:600px){
