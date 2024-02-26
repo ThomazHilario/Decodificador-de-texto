@@ -46,8 +46,20 @@ function criptografando(){
         let criptografado = text.value.split('').map(caractere => schema[caractere] || caractere).join('')
 
         // Inserindo o resultado na tag p
-        document.querySelector('p').textContent = criptografado
-        
+        document.getElementById('textResult').textContent = criptografado
+
+        // Alterando o sentido do justify-content do barra lateral
+        document.getElementById('barra_lateral').style.justifyContent = 'space-between'
+
+        //Alterando o display da divNotFound
+        document.getElementById('divNotFound').style.display = 'none'
+
+        // Alterando display do paragrafo do resultado
+        document.getElementById('textResult').style.display = 'block'
+
+        // Alterando o display do button
+        button_copiar.style.display = 'block'
+
         // Limpando textarea
         text.value = ''
     }
